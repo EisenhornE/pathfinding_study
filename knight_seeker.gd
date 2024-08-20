@@ -26,6 +26,9 @@ func seeker():
 ##########################################
 # You can remove await in the _physics_process but it will show errors despite it still working.
 # The navigation is a bit wonky and can get stuck. Experimenting with collisions might work.
+# The above is fixed. removing the navigation layer in the elevation TileMapLayer improved the 
+# pathfinding. Tile Set > Navigation Layers > Delete Layers
+# Source: https://tinyurl.com/2s3dcjv4
 ##########################################
 
 func _physics_process(delta):
