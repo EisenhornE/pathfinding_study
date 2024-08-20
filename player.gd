@@ -6,7 +6,7 @@ var character_direction : Vector2
 @onready var sprite_2d = $Sprite2D
 @onready var ap = $AnimationPlayer
 
-
+# Typical Movement input
 func _physics_process(delta):
 	character_direction.x = Input.get_axis("ui_left","ui_right")
 	character_direction.y = Input.get_axis("ui_up","ui_down")
